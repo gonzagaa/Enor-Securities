@@ -80,11 +80,6 @@ html {
     pointer-events: none;
   }
 
-  body, 
-  html {
-    cursor: url("../assets/cursor\ white.svg"), auto;
-  }
-
   section {
     padding-block: 8rem;
   }

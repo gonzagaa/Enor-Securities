@@ -23,33 +23,19 @@ window.addEventListener('mousemove', function (e) {
     duration: 1200,
   });
 
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    loop: true,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    keyboard: {
-      enabled: true,
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 3,
-        spaceBetween: 10,
-      },
-      1080: {
-        slidesPerView: 5,
-        spaceBetween: 20,
-      },
-    },
-  });
+  
+  const sectionHome = document.getElementById('home');
+  const foguete = document.querySelector('.foguete');
+  
+  gsap.to(foguete, {
+    y: -500,
+    x: 0,
+    opacity: 1,
+    duration: 100,
+    scrollTrigger: {
+      trigger: sectionHome,
+      start: 'center center',
+      end: 'bottom top',
+      scrub: true,
+    }
+  })

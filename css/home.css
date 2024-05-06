@@ -9,8 +9,6 @@
 
   transition: all 200ms ease-in-out;
 
-  cursor: url("../assets/cursor\ white.svg"), auto;
-
   background-size: 150% 150%;
   animation: gradient 10s ease infinite;
 
@@ -105,10 +103,23 @@
   width: 70%;
   z-index: 2;
 
-  animation: foguete 40s linear infinite;
 
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 50%, transparent 100%);
-  filter: drop-shadow(10px 10px 50px #00000052);
+  filter: drop-shadow(10px 10px 50px #bdbbbb52);
+  transition: all 100ms linear;
+}
+
+
+@keyframes foguete {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    transform:translate(-50%, -50%);
+  }
 }
 
 #home a {
@@ -203,17 +214,6 @@
   letter-spacing: .2rem;
 }
 
-@keyframes foguete {
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  50% {
-    transform: translate(-50%, -60%);
-  }
-  100% {
-    transform:translate(-50%, -50%);
-  }
-}
 
 #home .blush {
     width: 1500px;
