@@ -1,0 +1,144 @@
+#gallery {
+    background: var(--gradient);
+    background-size: 150% 150%;
+    animation: gradient 10s ease infinite;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#gallery header {
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+#gallery header > span {
+    font-size: 1.6rem;
+    font-family: var(--interV);
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+#gallery header h2 {
+    font-weight: 500;
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+#gallery .card {
+    border: 2px solid #ffffff37;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.14);
+
+    margin-bottom: 4rem;
+}
+
+#gallery .card .image {
+    background: #fff;
+    aspect-ratio: 16/10;
+    border-radius: .5rem;
+}
+
+#gallery .card .text {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#gallery .card .text h3 {
+    font-size: 2.5rem;
+    color: var(--color-text);
+    margin-bottom: .5rem;
+}
+
+#gallery .card .text p {
+    font-family: var(--interV);
+    font-size: 1.8rem;
+    color: var(--paragraphy);
+    font-weight: 600;
+}
+
+#gallery .card .text p span {
+    font-weight: 400;
+    color: var(--color-text);
+}
+
+#gallery .swiper-pagination {
+    bottom: 0;
+}
+
+#gallery .swiper-pagination-bullet-active {
+    background: var(--primary-color) !important;
+}
+  
+#gallery .swiper-pagination-bullet {
+    background: var(--color-text) !important;
+}
+
+#gallery .swiper-button-next,
+#gallery .swiper-button-prev {
+    display: none;
+}
+
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    section#gallery header {
+        text-align: center;
+    }
+
+    section#gallery header > span {
+        font-size: 1.8rem;
+    }
+
+    section#gallery header h2 {
+        font-size: 4rem;
+    }
+
+    section#gallery .wrapper .card {
+        margin-bottom: 5rem;
+    }
+
+    section#gallery .wrapper svg.swiper-button-next {
+        margin-right: -1rem;
+    }
+      
+    section#gallery .wrapper svg.swiper-button-prev {
+        margin-left: -1rem;
+    }
+
+    section#gallery .wrapper svg {
+        transform: scale(2.5);
+        transition: all 200ms ease-in-out;
+        opacity: .7;
+      }
+      
+    section#gallery .wrapper svg:hover {
+        transform: scale(2.7);
+        cursor: url("../assets/CURSOR\ LSB.svg"), auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }

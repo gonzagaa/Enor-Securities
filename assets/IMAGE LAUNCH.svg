@@ -1,0 +1,100 @@
+<svg width="235" height="207" viewBox="0 0 235 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_34_275" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="205" y="120" width="30" height="59">
+<path d="M206.5 121L229.9 134C232.122 135.234 233.5 137.577 233.5 140.119V179" stroke="black" stroke-width="2"/>
+<path d="M226 142.5L206 131.5" stroke="black" stroke-width="2"/>
+<path d="M226 153.5L206 142.5" stroke="black" stroke-width="2"/>
+<path d="M226 163.5L206 152.5" stroke="black" stroke-width="2"/>
+</mask>
+<g mask="url(#mask0_34_275)">
+<rect x="206" y="121" width="29" height="58" fill="url(#paint0_linear_34_275)"/>
+</g>
+<g opacity="0.62">
+<mask id="mask1_34_275" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="87" y="134" width="73" height="73">
+<rect x="88" y="135" width="71" height="71" stroke="black" stroke-width="2"/>
+<rect x="106.75" y="153.75" width="33.5" height="33.5" stroke="black" stroke-width="1.5"/>
+<line x1="115" y1="153" x2="115" y2="145" stroke="black" stroke-width="2"/>
+<line x1="120" y1="153" x2="120" y2="145" stroke="black" stroke-width="2"/>
+<line x1="126" y1="153" x2="126" y2="145" stroke="black" stroke-width="2"/>
+<line x1="132" y1="153" x2="132" y2="145" stroke="black" stroke-width="2"/>
+<line x1="141" y1="162" x2="149" y2="162" stroke="black" stroke-width="2"/>
+<line x1="141" y1="167" x2="149" y2="167" stroke="black" stroke-width="2"/>
+<line x1="141" y1="173" x2="149" y2="173" stroke="black" stroke-width="2"/>
+<line x1="141" y1="179" x2="149" y2="179" stroke="black" stroke-width="2"/>
+<line x1="98" y1="162" x2="106" y2="162" stroke="black" stroke-width="2"/>
+<line x1="98" y1="167" x2="106" y2="167" stroke="black" stroke-width="2"/>
+<line x1="98" y1="173" x2="106" y2="173" stroke="black" stroke-width="2"/>
+<line x1="98" y1="179" x2="106" y2="179" stroke="black" stroke-width="2"/>
+<line x1="115" y1="196" x2="115" y2="188" stroke="black" stroke-width="2"/>
+<line x1="120" y1="196" x2="120" y2="188" stroke="black" stroke-width="2"/>
+<line x1="126" y1="196" x2="126" y2="188" stroke="black" stroke-width="2"/>
+<line x1="132" y1="196" x2="132" y2="188" stroke="black" stroke-width="2"/>
+</mask>
+<g mask="url(#mask1_34_275)">
+<rect x="86" y="134" width="74.0139" height="73" fill="url(#paint1_linear_34_275)"/>
+</g>
+</g>
+<mask id="mask2_34_275" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-1" y="91" width="39" height="77">
+<path d="M36 92L3.6005 110C1.37825 111.234 0 113.577 0 116.119V168" stroke="black" stroke-width="2"/>
+<path d="M8.5 121.5L36 105.5" stroke="black" stroke-width="2"/>
+<path d="M9 135.5L36.5 119.5" stroke="black" stroke-width="2"/>
+<path d="M9 149.5L36.5 133.5" stroke="black" stroke-width="2"/>
+</mask>
+<g mask="url(#mask2_34_275)">
+<rect y="92" width="36.5" height="76" fill="url(#paint2_linear_34_275)"/>
+</g>
+<mask id="mask3_34_275" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="46" y="-2" width="154" height="170">
+<path d="M48 168V43.5L123.5 0L198.5 43.5V168" stroke="black" stroke-width="3"/>
+<path d="M66.5 62.5L122.5 29.5L179.5 62.5" stroke="black" stroke-width="2"/>
+<path d="M66.5 92L122.5 59L179.5 92" stroke="black" stroke-width="2"/>
+<path d="M67.5 124L123.5 91L180.5 124" stroke="black" stroke-width="2"/>
+</mask>
+<g mask="url(#mask3_34_275)">
+<rect x="48" width="150.5" height="168" fill="url(#paint3_linear_34_275)"/>
+</g>
+<rect x="87" y="46" width="73" height="73" fill="#EBEBEB"/>
+<mask id="mask4_34_275" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="87" y="46" width="73" height="73">
+<rect x="88" y="47" width="71" height="71" stroke="black" stroke-width="2"/>
+<rect x="106.75" y="65.75" width="33.5" height="33.5" stroke="black" stroke-width="1.5"/>
+<line x1="115" y1="65" x2="115" y2="57" stroke="black" stroke-width="2"/>
+<line x1="120" y1="65" x2="120" y2="57" stroke="black" stroke-width="2"/>
+<line x1="126" y1="65" x2="126" y2="57" stroke="black" stroke-width="2"/>
+<line x1="132" y1="65" x2="132" y2="57" stroke="black" stroke-width="2"/>
+<line x1="141" y1="74" x2="149" y2="74" stroke="black" stroke-width="2"/>
+<line x1="141" y1="79" x2="149" y2="79" stroke="black" stroke-width="2"/>
+<line x1="141" y1="85" x2="149" y2="85" stroke="black" stroke-width="2"/>
+<line x1="141" y1="91" x2="149" y2="91" stroke="black" stroke-width="2"/>
+<line x1="98" y1="74" x2="106" y2="74" stroke="black" stroke-width="2"/>
+<line x1="98" y1="79" x2="106" y2="79" stroke="black" stroke-width="2"/>
+<line x1="98" y1="85" x2="106" y2="85" stroke="black" stroke-width="2"/>
+<line x1="98" y1="91" x2="106" y2="91" stroke="black" stroke-width="2"/>
+<line x1="115" y1="108" x2="115" y2="100" stroke="black" stroke-width="2"/>
+<line x1="120" y1="108" x2="120" y2="100" stroke="black" stroke-width="2"/>
+<line x1="126" y1="108" x2="126" y2="100" stroke="black" stroke-width="2"/>
+<line x1="132" y1="108" x2="132" y2="100" stroke="black" stroke-width="2"/>
+</mask>
+<g mask="url(#mask4_34_275)">
+<rect x="86" y="46" width="74.0139" height="73" fill="url(#paint4_linear_34_275)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_34_275" x1="206" y1="121" x2="252.852" y2="150.288" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3EB7E3"/>
+<stop offset="1" stop-color="#9236FD"/>
+</linearGradient>
+<linearGradient id="paint1_linear_34_275" x1="86" y1="138" x2="160" y2="207" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3CBAE2"/>
+<stop offset="1" stop-color="#9138FC"/>
+</linearGradient>
+<linearGradient id="paint2_linear_34_275" x1="0" y1="92" x2="60.2797" y2="128.194" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3EB7E3"/>
+<stop offset="1" stop-color="#9236FD"/>
+</linearGradient>
+<linearGradient id="paint3_linear_34_275" x1="48" y1="0" x2="198" y2="168" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3EB7E3"/>
+<stop offset="1" stop-color="#9236FD"/>
+</linearGradient>
+<linearGradient id="paint4_linear_34_275" x1="86" y1="50" x2="160" y2="119" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3CBAE2"/>
+<stop offset="1" stop-color="#9138FC"/>
+</linearGradient>
+</defs>
+</svg>

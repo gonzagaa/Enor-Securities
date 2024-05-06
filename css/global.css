@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--Bricolage);
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-text: #f1f1f1;
+  --gradient: linear-gradient(45deg, #36C3E0, #9432FD);
+  --black-color: #000;
+
+  --purple: #9432FD;
+  --blue: #36C3E0;
+  --paragraphy: #191D66;
+
+  --color-text-2: #ebebeb;
+ 
+  --nav-height: 7.2rem;
+
+  --interV: 'interV';
+  --Bricolage: 'Bricolage';
+  --PhonkContrast: 'PhonkV2';
+}
+
+
+
+@font-face {
+  font-family: 'Bricolage';
+  src: url(../fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: 'InterV';
+  src: url(../fonts/Inter-V.ttf);
+}
+
+#particles-js {
+  background-color: transparent;
+  opacity: .7;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 5;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--Phonk);
+    text-align: center;
+    background: var(--gradient-black);
+  }
+
+  body {
+    cursor: none;
+    background-color: var(--black-900);
+  }
+
+  .cursor-outline {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #0000007a;
+  }
+
+  .cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 150;
+    pointer-events: none;
+  }
+
+  body, 
+  html {
+    cursor: url("../assets/cursor\ white.svg"), auto;
+  }
+
+  section {
+    padding-block: 8rem;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  ::selection {
+  color: #000000;
+  background: #d8d8d8;
+}
+
+  .wrapper {
+    width: min(50rem, 100%);
+    margin-inline: auto;
+  
+    padding-inline: 2.4rem;
+  }
+
+  @media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  /*====  scrollbar ============================ */
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  width: .6rem;
+  background: linear-gradient(to bottom, #d8d8d8, #00000000);
+  border-radius: 1rem;
+}
+
+  /* buttonWhatsapp =================== */
+#buttonWhatsapp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+  
+    opacity: 0;
+    visibility: hidden;
+  
+    transform: translateY(100%);
+    transition: all 300ms ease-in-out;
+  }
+  
+  #buttonWhatsapp.show {
+    opacity: 1;
+    visibility: visible;
+  
+    transform: translateY(0);
+  }
+  
+  #buttonWhatsapp img {
+    width: 6rem;
+    transition: all 300ms ease-in-out;
+  }
+  
+  #buttonWhatsapp svg:hover {
+    transform: scale(1.1);
+  }

@@ -1,0 +1,155 @@
+#topics {
+    background: var(--color-text);
+    overflow: hidden;
+    position: relative;
+    z-index: 6;
+}
+
+#topics header {
+    text-align: left;
+}
+
+#topics header > span {
+    font-size: 1.6rem;
+    font-family: var(--interV);
+    color: var(--purple);
+    font-weight: 700;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#topics header h2 {
+    font-weight: 500;
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--paragraphy);
+}
+
+#topics header h2 span {
+    font-weight: 800;
+}
+
+#topics header p {
+    font-family: var(--interV);
+    font-size: 1.6rem;
+    color: var(--paragraphy);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#topics .image {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: start;
+}
+
+#topics .image img {
+    width: 70%;
+}
+
+#topics .cards {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#topics .cards .card {
+    text-align: left;
+    position: relative;
+}
+
+#topics .cards .card::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: var(--paragraphy);
+    left: 0;
+    bottom: -1.5rem;
+    opacity: .3;
+}
+
+#topics .cards .card h4 {
+    font-size: 2.5rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#topics .cards .card p {
+    font-size: 1.8rem;
+    color: var(--paragraphy);
+    font-weight: 300;
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    section#topics .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "A B C";
+        gap: 15rem;
+    }
+
+    section#topics .image {
+        grid-area: A;
+        margin-top: initial;
+    }
+
+    section#topics .image img {
+        width: 100%;
+    }
+
+    section#topics header > span {
+        font-size: 1.8rem
+    }
+
+    section#topics header h2 {
+        font-size: 5rem;
+    }
+ 
+    section#topics header p {
+        font-size: 2.2rem;
+    }
+
+    section#topics .cards {
+        margin-top: initial;
+        gap: 4rem;
+    }
+
+    section#topics .cards .card::before {
+        bottom: -2rem;
+    }
+
+    section#topics .cards .card h4 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    section#topics .cards .card p {
+        font-size: 1.8rem;
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }

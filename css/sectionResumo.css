@@ -1,0 +1,197 @@
+#resumo {
+    background: var(--color-text-2);
+    overflow: hidden;
+    position: relative;
+    z-index: 6;
+}
+
+#resumo header {
+    text-align: left;
+}
+
+#resumo header > span {
+    font-size: 1.6rem;
+    font-family: var(--interV);
+    color: var(--purple);
+    font-weight: 700;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#resumo header h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--paragraphy);
+}
+
+#resumo header h2 span {
+    font-weight: 800;
+}
+
+#resumo .head {
+    margin-top: 5rem;
+    text-align: left;
+}
+
+#resumo .head h3 {
+    font-size: 3rem;
+    color: var(--paragraphy);
+
+    position: relative;
+}
+
+#resumo .head h3::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    top: -1rem;
+    background: var(--paragraphy);
+    left: 0;
+    opacity: .5;
+}
+
+#resumo .head p {
+    margin-top: 1rem;
+    font-family: var(--interV);
+    font-size: 1.6rem;
+    color: var(--paragraphy);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#resumo .cards {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#resumo .cards .card {
+    text-align: left;
+    position: relative;
+    padding-block: 1.5rem;
+}
+
+#resumo .cards .card::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: -.5rem;
+    background: var(--paragraphy);
+    border-radius: 2rem;
+    opacity: .3;
+}
+
+#resumo .cards .card img {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+#resumo .cards .card h3 {
+    font-size: 2rem;
+    color: var(--purple);
+    margin-bottom: 1rem;
+}
+
+#resumo .cards .card p {
+    color: var(--paragraphy);
+    font-family: var(--interV);
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+#resumo .cards .card p span {
+    color: var(--purple);
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    section#resumo header > span {
+        font-size: 1.8rem;
+    }
+
+    section#resumo header h2 {
+        font-size: 5rem;
+    }
+
+    section#resumo .text {
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 10rem;
+        align-items: center;
+    }
+
+    section#resumo .text .head {
+        margin-top: initial;
+    }
+
+    section#resumo .text .head h3 {
+        font-size: 4.5rem;
+    }
+
+    section#resumo .text .head p {
+        font-size: 2.2rem;
+    }
+
+    section#resumo .cards {
+        gap: 3rem;
+    }
+
+    section#resumo .cards .card::before {
+        top: initial;
+        bottom: -1.5rem;
+        background: linear-gradient(to right, #191D66 60%, #00000000);
+    }
+
+    section#resumo .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: initial;
+    }
+
+    section#resumo .cards .card {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    section#resumo .cards .card img {
+        width: 5rem;
+        margin-bottom: initial;
+    }
+
+    section#resumo .cards .card h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    section#resumo .cards .card p {
+        font-size: 1.6rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }

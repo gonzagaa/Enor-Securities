@@ -1,0 +1,168 @@
+#signup {
+    background: var(--gradient);
+    background-size: 150% 150%;
+    animation: gradient 10s ease infinite;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#signup {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#signup img.industria {
+    position: absolute;
+    width: 100%;
+    opacity: .1;
+    z-index: 1;
+  }
+  
+  #signup img.industria.one {
+    bottom: 0;
+    right: 0;
+  
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%, transparent 100%);
+  }
+  
+  #signup img.industria.two {
+    bottom: 0;
+    left: 0;
+  
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, transparent 100%);
+  }
+
+#signup header {
+    text-align: left;
+}
+
+#signup header h2 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+#signup .cards {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#signup .cards .card {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#signup .cards .card img {
+    width: 6rem;
+    backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(255, 255, 255, 0.832);
+      border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+#signup .cards .card h3 {
+    color: var(--color-text);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#signup a button {
+    margin-top: 4rem;
+
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: var(--color-text);
+    border: none;
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.092);
+
+    transition: all 200ms ease-in-out;
+    border: 2px solid var(--color-text);
+
+    position: relative;
+    z-index: 7;
+}
+
+#signup a button:hover {
+    cursor: pointer;
+    box-shadow:  10px 10px 21px #0000001c,
+             -10px -10px 21px #00000013;
+    filter: brightness(1.1);
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    section#signup .content {
+        text-align: center;
+    }
+
+    section#signup img.industria {
+        width: 35%;
+    }
+
+    section#signup header {
+        text-align: center;
+    }
+
+    section#signup header h2 {
+        font-size: 4rem;
+    }
+
+    section#signup .cards {
+        margin-top: 7rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    section#signup .cards .card {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section#signup .cards .card img {
+        width: 8rem;
+        margin-bottom: 2rem;
+    }
+
+    section#signup .cards .card h3 {
+        font-size: 2rem;
+    }
+
+    section#signup a button {
+        margin-top: 7rem;
+        font-size: 2.5rem;
+        padding: 1rem 3rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }

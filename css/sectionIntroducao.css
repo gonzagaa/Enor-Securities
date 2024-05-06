@@ -1,0 +1,129 @@
+#introducao {
+    background: var(--color-text);
+    overflow: hidden;
+    position: relative;
+    z-index: 6;
+}
+
+#introducao header {
+    text-align: left;
+}
+
+#introducao header > span {
+    font-size: 1.6rem;
+    font-family: var(--interV);
+    color: var(--purple);
+    font-weight: 700;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#introducao header h2 {
+    font-weight: 500;
+    font-size: 4.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--paragraphy);
+}
+
+#introducao header h2 span {
+    font-weight: 800;
+}
+
+#introducao header p {
+    font-family: var(--interV);
+    font-size: 1.8rem;
+    color: var(--paragraphy);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#introducao .cards {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+#introducao .cards .card {
+    text-align: left;
+    position: relative;
+}
+
+#introducao .cards .card img {
+    width: 5rem;
+    margin-bottom: 1.6rem;
+}
+
+#introducao .cards .card p {
+    color: var(--paragraphy);
+    font-family: var(--interV);
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+#introducao .cards .card p span {
+    color: var(--purple);
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    section#introducao header {
+        text-align: center;
+    }
+
+    section#introducao header > span {
+        font-size: 1.8rem;
+    }
+
+    section#introducao header h2 {
+        font-size: 9rem;
+    }
+
+    section#introducao header p {
+        font-size: 2.5rem;
+    }
+
+    section#introducao .cards {
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15rem;
+    }
+
+    section#introducao .cards .card {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        margin-left: initial;
+    }
+
+    section#introducao .cards .card img {
+        width: 7rem;
+        margin-bottom: initial;
+    }
+
+    section#introducao .cards .card p {
+        font-size: 2rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
