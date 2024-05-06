@@ -28,30 +28,19 @@
 }
 
 #resumo header h2 span {
-    font-weight: 800;
+    font-weight: 700;
 }
 
 #resumo .head {
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-align: left;
 }
 
 #resumo .head h3 {
     font-size: 3rem;
     color: var(--paragraphy);
-
+    font-weight: 500;
     position: relative;
-}
-
-#resumo .head h3::before {
-    content: '';
-    position: absolute;
-    width: 40%;
-    height: 2px;
-    top: -1rem;
-    background: var(--paragraphy);
-    left: 0;
-    opacity: .5;
 }
 
 #resumo .head p {

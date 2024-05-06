@@ -28,7 +28,7 @@
 }
 
 #topics header h2 span {
-    font-weight: 800;
+    font-weight: 700;
 }
 
 #topics header p {
@@ -77,6 +77,7 @@
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }
 
 #topics .cards .card p {
