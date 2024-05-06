@@ -106,7 +106,6 @@
 
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 50%, transparent 100%);
   filter: drop-shadow(10px 10px 50px #bdbbbb52);
-  transition: all 100ms linear;
 }
 
 
@@ -254,6 +253,7 @@
     header#home img.foguete {
       width: 26%;
       top: 45%;
+    transition: all 100ms linear;
     }
 
     header#home img.industria {
