@@ -82,12 +82,12 @@
     font-weight: 500;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    color: var(--paragraphy);
+    color: #fff;
     border: none;
 
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(255, 255, 255, 0.549);
+    background-color: rgba(255, 255, 255, 0.332);
 
     transition: all 200ms ease-in-out;
     border: 2px solid var(--color-text);

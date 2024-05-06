@@ -64,7 +64,7 @@
 }
 
 #introducao .cards .card p span {
-    color: var(--purple);
+    font-weight: 600;
 }
 
 @media (min-width: 1080px) {
@@ -109,6 +109,7 @@
 
     section#introducao .cards .card p {
         font-size: 2rem;
+        text-align: left;
     }
   }
 

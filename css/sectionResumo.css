@@ -56,25 +56,31 @@
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 #resumo .cards .card {
     text-align: left;
     position: relative;
-    padding-block: 1.5rem;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #ebebeb, #e3e3e3);
+    border-radius: 0 1rem;
 }
 
 #resumo .cards .card::before {
     content: '';
     position: absolute;
-    height: 2px;
     width: 100%;
-    left: 0;
-    bottom: -.5rem;
-    background: var(--paragraphy);
     border-radius: 2rem;
-    opacity: .3;
+    height: 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--gradient);
+    border-radius: 1.3rem;
+
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
 }
 
 #resumo .cards .card img {
@@ -84,7 +90,7 @@
 
 #resumo .cards .card h3 {
     font-size: 2rem;
-    color: var(--purple);
+    color: var(--paragraphy);
     margin-bottom: 1rem;
 }
 
@@ -117,7 +123,7 @@
         display: grid;
         grid-template-columns: 1fr 1.5fr;
         gap: 10rem;
-        align-items: center;
+        align-items: start;
     }
 
     section#resumo .text .head {
@@ -134,12 +140,6 @@
 
     section#resumo .cards {
         gap: 3rem;
-    }
-
-    section#resumo .cards .card::before {
-        top: initial;
-        bottom: -1.5rem;
-        background: linear-gradient(to right, #191D66 60%, #00000000);
     }
 
     section#resumo .cards {

@@ -46,7 +46,7 @@
 
 #descricao .image img {
     width: 100%;
-    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 50%, transparent 100%);
+    
 }
 
 @media (min-width: 1080px) {

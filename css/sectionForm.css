@@ -73,7 +73,7 @@
 
 #form .form input::placeholder {
     font-size: 1.6rem;
-    color: var(--paragraphy);
+    color: #fff;
     font-weight: 400;
     opacity: .8;
 }
