@@ -91,6 +91,7 @@
 }
 
 #resumo .cards .card h3 {
+    font-weight: 600;
     font-size: 2rem;
     color: var(--paragraphy);
     margin-bottom: 1rem;
