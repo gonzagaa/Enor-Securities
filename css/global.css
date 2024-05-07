@@ -67,7 +67,7 @@ html {
   .cursor-dot {
     width: 5px;
     height: 5px;
-    background: var(--gradient);
+    background: var(--purple);
   }
 
   .cursor-outline {
