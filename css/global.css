@@ -56,12 +56,12 @@ html {
     width: 100%;
     height: 100%;
     text-align: center;
-    background: var(--gradient);
+    background: var(--purple);
   }
 
   body {
     cursor: none;
-    background-color: var(--black-900);
+    background: var(--purple);
   }
 
   .cursor-dot {
