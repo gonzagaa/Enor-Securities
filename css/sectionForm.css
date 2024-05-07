@@ -27,6 +27,9 @@
   
     box-shadow:  11px 11px 22px #0000001f,
                -11px -11px 22px #00000023;
+
+    animation: icon infinite ease-in-out 12s forwards;
+    
   }
 
 #form header h2 {
@@ -94,6 +97,13 @@
 
     box-shadow:  11px 11px 22px #00000010,
                -11px -11px 22px #00000014;
+    
+    transition: all 200ms ease-in-out;
+}
+
+#form .form button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
 }
 
 @media (min-width: 1080px) {

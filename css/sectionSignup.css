@@ -38,6 +38,15 @@
     text-align: left;
 }
 
+#signup header img {
+  width: 12rem;
+  backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.839);
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
 #signup header h2 {
     font-weight: 500;
     font-size: 2.5rem;
@@ -67,6 +76,8 @@
       border: 1px solid rgba(255, 255, 255, 0.125);
     padding: 1rem;
     border-radius: 50%;
+
+    animation: icon infinite ease-in-out 12s forwards;
 }
 
 #signup .cards .card h3 {
