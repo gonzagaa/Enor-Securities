@@ -131,13 +131,13 @@ html {
 
   /*====  scrollbar ============================ */
 ::-webkit-scrollbar {
-  width: .6rem;
-  background-color: #0f0f0f;
+  width: .7rem;
+  background-color: #dbdbdb;
 }
 
 ::-webkit-scrollbar-thumb {
   width: .6rem;
-  background: linear-gradient(to bottom, #d8d8d8, #00000000);
+  background: linear-gradient(to bottom, #c334e7, #00a3ef);
   border-radius: 1rem;
 }
 

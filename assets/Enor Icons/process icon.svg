@@ -1,15 +1,15 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<mask id="mask0_42_376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
-<rect width="512" height="512" fill="url(#pattern0_42_376)"/>
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_42_376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<rect width="80" height="80" fill="url(#pattern0_42_376)"/>
 </mask>
 <g mask="url(#mask0_42_376)">
-<rect width="512" height="512" fill="url(#paint0_linear_42_376)"/>
+<rect width="80" height="80" fill="url(#paint0_linear_42_376)"/>
 </g>
 <defs>
 <pattern id="pattern0_42_376" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_42_376" transform="scale(0.00195312)"/>
 </pattern>
-<linearGradient id="paint0_linear_42_376" x1="0" y1="0" x2="448.842" y2="561.157" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_42_376" x1="0" y1="0" x2="70.1315" y2="87.6807" gradientUnits="userSpaceOnUse">
 <stop stop-color="#3EB7E3"/>
 <stop offset="1" stop-color="#9236FD"/>
 </linearGradient>
