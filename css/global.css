@@ -9,8 +9,9 @@
 :root {
   font-size: 62.5%;
 
-  --color-text: #f1f1f1;
-  --gradient: linear-gradient(45deg, #36C3E0, #9432FD);
+  --color-text: #fff;
+  --gradient: linear-gradient(110deg, #3CB8A3, #6582D0, #852AE3);
+  --gradient-mobile: linear-gradient(-125deg, #3CB8A3, #6582D0, #852AE3);
   --black-color: #000;
 
   --purple: #9432FD;
@@ -107,21 +108,27 @@ html {
     padding-inline: 2.4rem;
   }
 
+  @media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+  }
+
   @media (min-width: 1080px) {
     .wrapper {
-      width: min(112rem, 100%);
+      width: min(90rem, 100%);
     }
   }
 
   @media (min-width: 1200px) {
     .wrapper {
-      width: min(130rem, 100%);
+      width: min(100rem, 100%);
     }
   }
 
   @media (min-width: 1400px) {
     .wrapper {
-      width: min(150rem, 100%);
+      width: min(110rem, 100%);
     }
 
     :root {

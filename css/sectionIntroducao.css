@@ -1,34 +1,41 @@
 #introducao {
     background: var(--color-text);
-    overflow: hidden;
     position: relative;
     z-index: 6;
 }
 
 #introducao header {
-    text-align: left;
+    margin-top: 2rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #introducao header > span {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-family: var(--interV);
     color: var(--purple);
     font-weight: 700;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    display: block;
+    width: 70%;
+    font-weight: 400;
 }
 
 #introducao header h2 {
     font-weight: 500;
-    font-size: 4.5rem;
-    margin-top: 1rem;
+    font-size: 4rem;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--paragraphy);
+    color: var(--purple);
 }
 
 #introducao header h2 span {
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 15rem;
+    line-height: .8;
 }
 
 #introducao header p {
@@ -46,88 +53,136 @@
     gap: 3.5rem;
 }
 
+#introducao .cards .path {
+    clip-path: polygon(25.6% 0%, 74.4% 0%, 100% 50%, 74.4% 100%, 25.6% 100%, 0% 50%);
+    background: var(--purple);
+    width: 34.3rem;
+    height: 30rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #introducao .cards .card {
     text-align: center;
     position: relative;
+
+    clip-path: polygon(25.6% 0%, 74.4% 0%, 100% 50%, 74.4% 100%, 25.6% 100%, 0% 50%);
+    background: #ffffff;
+
+    width: 34rem;
+    height: 29.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
 }
 
 #introducao .cards .card img {
-    width: 5rem;
-    margin-bottom: 1.6rem;
+    width: 8rem;
+    margin-bottom: 2rem;
 
     animation: icon infinite ease-in-out 12s forwards;
 }
 
-@keyframes icon {
-    0%,
-	100% {
-		transform: rotate(0deg);
-		transform-origin: 50% 50%;
-	}
-
-	10% {
-		transform: rotate(4deg);
-	}
-
-	20%,
-	40%,
-	60% {
-		transform: rotate(-6deg);
-	}
-
-	30%,
-	50%,
-	70% {
-		transform: rotate(6deg);
-	}
-
-	80% {
-		transform: rotate(-4deg);
-	}
-
-	90% {
-		transform: rotate(4deg);
-	}
-}
-
-
 #introducao .cards .card p {
     color: var(--paragraphy);
     font-family: var(--interV);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.8rem;
 }
 
 #introducao .cards .card p span {
     font-weight: 600;
+    color: var(--purple);
+}
+
+#introducao .powerButton {
+    display: none;
 }
 
 @media (min-width: 1080px) {
-    .wrapper {
-      width: min(112rem, 100%);
+
+    section#introducao {
+        overflow: hidden;
     }
 
-    section#introducao header {
-        text-align: center;
+    section#introducao .head {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
 
     section#introducao header > span {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
+    }
+
+    section#introducao .head header {
+        text-align: left;
+        align-items: start;
     }
 
     section#introducao header h2 {
-        font-size: 9rem;
+        font-size: 8rem;
+        margin-top: 1rem;
+    }
+
+    section#introducao header h2 span {
+        font-size: 8rem;
     }
 
     section#introducao header p {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    section#introducao .powerButton {
+        display: inherit;
+        justify-content: end;
+    }
+
+    section#introducao .powerButton img {
+        width: 65%;
     }
 
     section#introducao .cards {
         margin-top: 8rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 15rem;
+        justify-items: center;
+        gap: 0;
+
+        position: relative;
+    }
+
+    section#introducao .cards::before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        left: -50%;
+        top: 50%;
+        transform: translate(0, -50%);
+        border-radius: 2rem;
+        background: var(--purple);
+    }
+
+    section#introducao .cards::after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        right: -50%;
+        top: 50%;
+        transform: translate(0, -50%);
+        border-radius: 2rem;
+        background: var(--purple);
+    }
+
+    section#introducao .cards .path {
+        width: 39.3rem;
+        height: 35rem;
     }
 
     section#introducao .cards .card {
@@ -135,6 +190,10 @@
         align-items: center;
         gap: 3rem;
         margin-left: initial;
+        padding: 7rem;
+
+        width: 39rem;
+        height: 34.7rem;
     }
 
     section#introducao .cards .card img {
@@ -144,20 +203,15 @@
 
     section#introducao .cards .card p {
         font-size: 2rem;
-        text-align: left;
     }
   }
 
   @media (min-width: 1200px) {
-    .wrapper {
-      width: min(130rem, 100%);
-    }
+   
   }
 
   @media (min-width: 1400px) {
-    .wrapper {
-      width: min(150rem, 100%);
-    }
+   
 
     :root {
       font-size: 65%;
