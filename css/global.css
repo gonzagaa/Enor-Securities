@@ -11,6 +11,7 @@
 
   --color-text: #fff;
   --gradient: linear-gradient(110deg, #3CB8A3, #6582D0, #852AE3);
+  --gradient2: linear-gradient(230deg, #3CB8A3, #6582D0, #852AE3);
   --gradient-mobile: linear-gradient(-125deg, #3CB8A3, #6582D0, #852AE3);
   --black-color: #000;
 
@@ -116,19 +117,19 @@ html {
 
   @media (min-width: 1080px) {
     .wrapper {
-      width: min(90rem, 100%);
+      width: min(108rem, 100%);
     }
   }
 
   @media (min-width: 1200px) {
     .wrapper {
-      width: min(100rem, 100%);
+      width: min(120rem, 100%);
     }
   }
 
   @media (min-width: 1400px) {
     .wrapper {
-      width: min(110rem, 100%);
+      width: min(140rem, 100%);
     }
 
     :root {

@@ -1,0 +1,127 @@
+#future {
+    background: var(--color-text);
+
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+#future header {
+    text-align: left;
+}
+
+#future header > span {
+    color: var(--paragraphy);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+#future header h2 {
+    font-weight: 500;
+    font-size: 3.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--purple);
+}
+
+#future header p {
+    color: var(--paragraphy);
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+#future header a button {
+    padding: 1rem 3rem;
+    background: var(--purple);
+    color: var(--color-text);
+    font-size: 3rem;
+    border: none;
+}
+
+#future .cards {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#future .cards .card {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #9432fd76;
+}
+
+#future .cards .card img {
+    width: 4rem;
+}
+
+#future .cards .card h3 {
+    color: var(--purple);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+#future .cards .card p {
+    color: var(--paragraphy);
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+@media (min-width: 1080px) {
+
+    section#future .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12rem;
+        align-items: center;
+    }
+
+    section#future header h2 {
+        font-size: 4.5rem;
+    }
+
+    section#future header p {
+        font-size: 2.2rem;
+    }
+
+    section#future header a button {
+        padding: 2rem 5rem;
+    }
+
+    section#future .cards {
+        margin-top: initial;
+    }
+
+    section#future .cards .card {
+        gap: 4rem;
+    }
+
+    section#future .cards .card img {
+        width: 4rem;
+    }
+
+    section#future .cards .card h3 {
+        font-size: 2.2rem;
+    }
+
+    section#future .cards .card p {
+        font-size: 1.8rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+   
+  }
+
+  @media (min-width: 1400px) {
+   
+
+    :root {
+      font-size: 65%;
+    }
+  }

@@ -1,46 +1,27 @@
 #resumo {
-    background: var(--color-text-2);
+    background: var(--color-text);
     overflow: hidden;
     position: relative;
     z-index: 6;
 }
 
-#resumo header {
-    text-align: left;
+#resumo .image {
+    margin-top: 5rem;
 }
 
-#resumo header > span {
-    font-size: 1.6rem;
-    font-family: var(--interV);
-    color: var(--purple);
-    font-weight: 700;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#resumo header h2 {
-    font-weight: 500;
-    font-size: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: var(--paragraphy);
-}
-
-#resumo header h2 span {
-    font-weight: 600;
+#resumo .image img {
+    width: 80%;
 }
 
 #resumo .head {
-    margin-top: 3rem;
     text-align: left;
 }
 
-#resumo .head h3 {
-    font-size: 3rem;
-    color: var(--paragraphy);
+#resumo .head h2 {
     font-weight: 500;
-    position: relative;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--purple);
 }
 
 #resumo .head p {
@@ -48,12 +29,12 @@
     font-family: var(--interV);
     font-size: 1.6rem;
     color: var(--paragraphy);
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.5;
 }
 
 #resumo .cards {
-    margin-top: 5rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -61,10 +42,7 @@
 
 #resumo .cards .card {
     text-align: left;
-    position: relative;
-    padding: 2rem;
-    background: linear-gradient(to bottom, #ebebeb, #e3e3e3);
-    border-radius: 0 1rem;
+    margin-top: 2rem;
 }
 
 #resumo .cards .card::before {
@@ -76,31 +54,25 @@
     top: 0;
     left: 0;
     right: 0;
-    background: var(--gradient);
+    background: var(--paragraphy);
+    opacity: .2;
     border-radius: 1.3rem;
 
     background-size: 200% 200%;
     animation: gradient 3s ease infinite;
 }
 
-#resumo .cards .card img {
-    width: 5rem;
-    margin-bottom: 1rem;
-
-    animation: icon infinite ease-in-out 12s forwards;
-}
-
 #resumo .cards .card h3 {
     font-weight: 600;
     font-size: 2rem;
-    color: var(--paragraphy);
+    color: var(--purple);
     margin-bottom: 1rem;
 }
 
 #resumo .cards .card p {
     color: var(--paragraphy);
     font-family: var(--interV);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.6rem;
 }
 
@@ -109,60 +81,44 @@
 }
 
 @media (min-width: 1080px) {
-    
 
-    section#resumo header {
-        text-align: center;
-    }
-
-    section#resumo header > span {
-        font-size: 1.8rem;
-    }
-
-    section#resumo header h2 {
-        font-size: 5rem;
-    }
-
-    section#resumo .text {
-        margin-top: 8rem;
+    section#resumo .content {
         display: grid;
-        grid-template-columns: .6fr 1fr;
-        gap: 7rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "A B";
         align-items: center;
+    }
+
+    section#resumo .content .image {
+        grid-area: A;
+        display: flex;
+        justify-content: start;
+        margin-top: initial;
+    }
+
+    section#resumo .content .image img {
+        width: 60%;
     }
 
     section#resumo .text .head {
         margin-top: initial;
     }
 
-    section#resumo .text .head h3 {
+    section#resumo .head h2 {
         font-size: 4.5rem;
-        font-weight: 300;
     }
 
     section#resumo .text .head p {
-        font-size: 2.2rem;
-    }
-
-    section#resumo .cards {
-        gap: 3rem;
-    }
-
-    section#resumo .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: initial;
+        font-size: 1.8rem;
     }
 
     section#resumo .cards .card {
         display: flex;
         align-items: center;
-        gap: 3rem;
     }
 
-    section#resumo .cards .card img {
-        width: 5rem;
-        margin-bottom: initial;
+    section#resumo .cards .card::before {
+        display: none;
     }
 
     section#resumo .cards .card h3 {

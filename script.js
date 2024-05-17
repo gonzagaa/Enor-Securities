@@ -22,20 +22,3 @@ window.addEventListener('mousemove', function (e) {
   AOS.init({
     duration: 1700,
   });
-
-  
-  const sectionHome = document.getElementById('home');
-  const foguete = document.querySelector('.foguete');
-  
-  gsap.to(foguete, {
-    y: -500,
-    x: 0,
-    opacity: 1,
-    duration: 100,
-    scrollTrigger: {
-      trigger: sectionHome,
-      start: 'center center',
-      end: 'bottom top',
-      scrub: true,
-    }
-  })

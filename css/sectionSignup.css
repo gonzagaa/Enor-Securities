@@ -1,58 +1,25 @@
 #signup {
-    background: var(--gradient);
-    background-size: 150% 150%;
-    animation: gradient 10s ease infinite;
+    background: var(--color-text);
 
     overflow: hidden;
     position: relative;
 }
 
-#signup {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-#signup img.industria {
-    position: absolute;
-    width: 100%;
-    opacity: .1;
-    z-index: 1;
-  }
-  
-  #signup img.industria.one {
-    bottom: 0;
-    right: 0;
-  
-    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%, transparent 100%);
-  }
-  
-  #signup img.industria.two {
-    bottom: 0;
-    left: 0;
-  
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, transparent 100%);
-  }
-
 #signup header {
     text-align: left;
 }
 
-#signup header img {
-  width: 12rem;
-  backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(255, 255, 255, 0.839);
-  border-radius: 1rem;
-  padding: .5rem;
-}
-
 #signup header h2 {
     font-weight: 500;
-    font-size: 2.5rem;
-    margin-top: 1rem;
+    font-size: 3.6rem;
     margin-bottom: 1rem;
-    color: var(--color-text);
+    color: var(--purple);
+}
+
+#signup header p {
+    color: var(--paragraphy);
+    font-weight: 600;
+    font-size: 1.8rem;
 }
 
 #signup .cards {
@@ -64,54 +31,30 @@
 
 #signup .cards .card {
     display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
     gap: 1rem;
-    align-items: center;
+
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #9432fd76;
 }
 
 #signup .cards .card img {
     width: 6rem;
-    backdrop-filter: blur(16px) saturate(180%);
-      -webkit-backdrop-filter: blur(16px) saturate(180%);
-      background-color: rgba(255, 255, 255, 0.832);
-      border: 1px solid rgba(255, 255, 255, 0.125);
-    padding: 1rem;
-    border-radius: 50%;
-
-    animation: icon infinite ease-in-out 12s forwards;
+    margin-bottom: 1rem;
 }
 
 #signup .cards .card h3 {
-    color: var(--color-text);
+    color: var(--purple);
     font-size: 2rem;
     font-weight: 500;
 }
 
-#signup a button {
-    margin-top: 4rem;
-
-    font-size: 2rem;
+#signup .cards .card p {
+    color: var(--paragraphy);
     font-weight: 500;
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-    color: #fff;
-    border: none;
-
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(255, 255, 255, 0.332);
-
-    transition: all 200ms ease-in-out;
-    border: 2px solid var(--color-text);
-
-    position: relative;
-    z-index: 7;
-}
-
-#signup a button:hover {
-    cursor: pointer;
-    box-shadow:  10px 10px 21px #0000001c,
-             -10px -10px 21px #00000013;
-    filter: brightness(1.1);
+    font-size: 1.8rem;
 }
 
 @media (min-width: 1080px) {
@@ -121,42 +64,56 @@
         text-align: center;
     }
 
-    section#signup img.industria {
-        width: 35%;
-    }
-
     section#signup header {
         text-align: center;
     }
 
     section#signup header h2 {
-        font-size: 4rem;
+        font-size: 4.5rem;
+    }
+
+    section#signup header p {
+        font-size: 2rem;
     }
 
     section#signup .cards {
-        margin-top: 7rem;
+        margin-top: 8rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        justify-content: center;
+        justify-items: center;
     }
 
     section#signup .cards .card {
-        flex-direction: column;
-        justify-content: center;
+        border-bottom: initial;
+        padding-bottom: 0;
+        width: 70%;
+
+        position: relative;
+    }
+
+    section#signup .cards .card::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        left: -3rem;
+        top: 0;
+        background: var(--purple);
     }
 
     section#signup .cards .card img {
-        width: 8rem;
+        width: 5rem;
         margin-bottom: 2rem;
     }
 
     section#signup .cards .card h3 {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
-    section#signup a button {
-        margin-top: 7rem;
-        font-size: 2.5rem;
-        padding: 1rem 3rem;
+    section#signup .cards .card p {
+        font-size: 1.8rem;
     }
   }
 

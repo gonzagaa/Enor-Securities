@@ -2,6 +2,7 @@
     background: var(--color-text);
     position: relative;
     z-index: 6;
+    overflow: hidden;
 }
 
 #introducao header {

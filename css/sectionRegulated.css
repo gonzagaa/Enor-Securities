@@ -1,0 +1,112 @@
+#regulated {
+    background: var(--gradient2);
+    overflow: hidden;
+    position: relative;
+    z-index: 6;
+}
+
+#regulated header {
+    text-align: left;
+}
+
+#regulated header h3 {
+    color: var(--color-text);
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+#regulated header h2 {
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 6rem;
+    margin-top: 1rem;
+}
+
+#regulated .logos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+#regulated header img.comissao {
+    width: 25rem;
+}
+
+#regulated header img.ssf {
+    width: 15rem;
+}
+
+#regulated .text {
+    margin-top: 5rem;
+    color: var(--color-text);
+    text-align: left;
+}
+
+#regulated .text p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#regulated .text h3 {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+
+@media (min-width: 1080px) {
+
+    section#regulated .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    section#regulated header h3 {
+        font-size: 3rem;
+    }
+
+    section#regulated header h2 {
+        font-size: 10rem;
+    }
+
+    section#regulated header .logos {
+        flex-direction: row;
+        margin-top: 5rem;
+    }
+
+    section#regulated header .logos img.comissao {
+        width: 50%;
+    }
+
+    section#regulated header .logos img.ssf {
+        width: 10%;
+    }
+
+    section#regulated .text {
+        margin-top: initial;
+    }
+
+    section#regulated .text p {
+        font-size: 2.2rem;
+        font-weight: 200;
+    }
+
+    section#regulated .text h3 {
+        font-size: 2.2rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    
+  }
+
+  @media (min-width: 1400px) {
+   
+
+    :root {
+      font-size: 65%;
+    }
+  }

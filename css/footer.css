@@ -38,10 +38,6 @@
 }
 
 @media (min-width: 1080px) {
-    .wrapper {
-      width: min(112rem, 100%);
-    }
-
     footer#footer .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -62,16 +58,9 @@
   }
 
   @media (min-width: 1200px) {
-    .wrapper {
-      width: min(130rem, 100%);
-    }
   }
 
   @media (min-width: 1400px) {
-    .wrapper {
-      width: min(150rem, 100%);
-    }
-
     :root {
       font-size: 65%;
     }

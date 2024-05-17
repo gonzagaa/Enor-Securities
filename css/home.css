@@ -102,7 +102,7 @@
     header#home .content {
       height: 90vh;
       display: grid;
-      grid-template-columns: .7fr 1fr;
+      grid-template-columns: .8fr 1fr;
       align-items: center;
       justify-content: center;
     }
@@ -115,10 +115,12 @@
 
     header#home .content .text img.logo {
       width: 18rem;
+      margin-bottom: 2rem;
     }
 
     header#home .content .text h1 {
       font-size: 4.5rem;
+      margin-bottom: 2rem;
     }
 
     header#home .content .text p {
@@ -129,11 +131,13 @@
       height: 90vh;
       display: flex;
       align-items: end;
+      width: 100%;
     }
 
     header#home .image img.fogueteDesktop {
       display: inherit;
-      width: 100%;
+      width: 120%;
+      margin-left: -10rem;
     }
 
     header#home .fogueteMobile {
