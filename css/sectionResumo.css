@@ -18,6 +18,7 @@
 }
 
 #resumo .head h2 {
+    line-height: 1.2;
     font-weight: 500;
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -26,7 +27,6 @@
 
 #resumo .head p {
     margin-top: 1rem;
-    font-family: var(--interV);
     font-size: 1.6rem;
     color: var(--paragraphy);
     font-weight: 600;
@@ -71,7 +71,6 @@
 
 #resumo .cards .card p {
     color: var(--paragraphy);
-    font-family: var(--interV);
     font-weight: 600;
     font-size: 1.6rem;
 }

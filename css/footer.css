@@ -1,11 +1,10 @@
 #footer {
     position: relative;
     overflow: hidden;
-    background: #121212;
+    background: var(--gradient);
     padding-block: 8rem;
     z-index: 8;
 }
-
 
 #footer img {
     width: 70%;
@@ -25,9 +24,6 @@
 #footer .social-links a svg {
     opacity: .7;
     transition: all 300ms ease-in-out;
-    background: var(--gradient);
-    padding: .8rem;
-    border-radius: 50%;
     width: 4rem;
     height: 4rem;
 }
@@ -38,22 +34,20 @@
 }
 
 @media (min-width: 1080px) {
-    footer#footer .content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+   footer#footer .content {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-    }
+        justify-content: center;
+   }
 
     footer#footer .content .image {
-        margin-bottom: initial;
+        margin-bottom: 5rem;
+        justify-content: center;
     }
 
     footer#footer .content .image img {
-        width: 50%;
-    }
-
-    #footer .social-links {
-        justify-content: end;
+        width: 15%;
     }
   }
 

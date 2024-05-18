@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    font-family: var(--Bricolage);
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -15,28 +15,15 @@
   --gradient-mobile: linear-gradient(-125deg, #3CB8A3, #6582D0, #852AE3);
   --black-color: #000;
 
-  --purple: #9432FD;
+  --purple: #962eff;
   --blue: #36C3E0;
   --paragraphy: #191D66;
 
   --color-text-2: #ebebeb;
  
   --nav-height: 7.2rem;
-
-  --interV: 'interV';
-  --Bricolage: 'Bricolage';
-  --PhonkContrast: 'PhonkV2';
 }
 
-@font-face {
-  font-family: 'Bricolage';
-  src: url(../fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf);
-}
-
-@font-face {
-  font-family: 'InterV';
-  src: url(../fonts/Inter-V.ttf);
-}
 
 #particles-js {
   background-color: transparent;

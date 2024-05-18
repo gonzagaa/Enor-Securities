@@ -14,7 +14,6 @@
 
 #gallery header > span {
     font-size: 1.6rem;
-    font-family: var(--interV);
     color: var(--color-text);
     font-weight: 700;
 }
@@ -57,7 +56,6 @@
 }
 
 #gallery .card .text p {
-    font-family: var(--interV);
     font-size: 1.8rem;
     color: var(--paragraphy);
     font-weight: 600;
