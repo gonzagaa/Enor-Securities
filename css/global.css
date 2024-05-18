@@ -117,19 +117,19 @@ html {
 
   @media (min-width: 1080px) {
     .wrapper {
-      width: min(108rem, 100%);
+      width: min(100rem, 100%);
     }
   }
 
   @media (min-width: 1200px) {
     .wrapper {
-      width: min(120rem, 100%);
+      width: min(110rem, 100%);
     }
   }
 
   @media (min-width: 1400px) {
     .wrapper {
-      width: min(140rem, 100%);
+      width: min(120rem, 100%);
     }
 
     :root {

@@ -60,6 +60,14 @@
     z-index: 6;
 }
 
+#form .caixaFormulario {
+    display: none;
+}
+
+#form .caixaFormulario.active {
+    display: block;
+}
+
 #form .form form {
     width: 100%;
 }
@@ -143,12 +151,6 @@
         align-items: start;
     }
 
-    section#form .form-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-
     section#form a button.power {
         font-size: 6rem;
     }
@@ -164,13 +166,6 @@
     section#form .form {
         margin-top: initial;
         gap: 3rem;
-
-        backdrop-filter: blur(16px) saturate(180%);
-        -webkit-backdrop-filter: blur(16px) saturate(180%);
-        background-color: rgba(255, 255, 255, 0.14);
-        padding: 1.5rem;
-        border-radius: 1rem;
-        border: 1px solid #ffffff84;
     }
 
     section#form .form input {

@@ -22,3 +22,18 @@ window.addEventListener('mousemove', function (e) {
   AOS.init({
     duration: 1700,
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.caixaFormulario');
+    let currentSectionIndex = 0;
+
+    document.querySelectorAll('.Proximo').forEach(button => {
+        button.addEventListener('click', () => {
+            sections[currentSectionIndex].classList.remove('active');
+            currentSectionIndex++;
+            if (currentSectionIndex < sections.length) {
+                sections[currentSectionIndex].classList.add('active');
+            }
+        });
+    });
+});

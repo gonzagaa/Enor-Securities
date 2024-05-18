@@ -86,6 +86,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "A B";
+        gap: 10rem;
         align-items: center;
     }
 
@@ -97,7 +98,7 @@
     }
 
     section#resumo .content .image img {
-        width: 60%;
+        width: 70%;
     }
 
     section#resumo .text .head {

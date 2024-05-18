@@ -51,6 +51,8 @@
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 3.5rem;
 }
 
@@ -160,7 +162,7 @@
     section#introducao .cards::before {
         content: '';
         position: absolute;
-        width: 50%;
+        width: 30%;
         height: 3px;
         left: -50%;
         top: 50%;
@@ -172,7 +174,7 @@
     section#introducao .cards::after {
         content: '';
         position: absolute;
-        width: 50%;
+        width: 30%;
         height: 3px;
         right: -50%;
         top: 50%;
