@@ -25,6 +25,7 @@
     background-color: var(--color-text);  
     border-bottom: 1px solid #9432fd76;
     padding: 1.5rem;
+    padding-bottom: 2.5rem;
     border-radius: 1rem;
     color: var(--purple);
     font-weight: 600;
@@ -36,7 +37,7 @@
   #faq .details {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
   }
   
   #faq details summary:hover {
@@ -99,10 +100,11 @@
     section#faq .details {
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 2rem;
       }
 
       section#faq .details summary {
         font-size: 2rem;
+        padding-bottom: 3.2rem;
       }
   }
