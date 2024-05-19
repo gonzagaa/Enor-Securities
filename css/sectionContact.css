@@ -1,0 +1,105 @@
+#contact {
+    background: var(--purple);
+
+    overflow: hidden;
+    position: relative;
+}
+
+#contact header {
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+#contact header h2 {
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+#contact header p {
+    color: var(--color-text);
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+#contact .form form {
+    width: 100%;
+}
+
+#contact .form input,
+#contact .form textarea {
+    border: none;
+    background-color: rgba(229, 229, 229, 0.28);
+    padding: 1.5rem;
+    border: 1px solid #ffffffca;
+    width: 100%;
+
+    box-shadow:  11px 11px 22px #00000010,
+               -11px -11px 22px #00000014;
+    margin-bottom: 1rem;
+}
+
+#contact .form textarea {
+    min-height: 10rem;
+}
+
+#contact .form input::placeholder,
+#contact .form textarea::placeholder {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 400;
+    opacity: .8;
+}
+
+#contact .form input:focus,
+#contact .form textarea:focus,
+#contact .form select:focus {
+    outline: 1px solid var(--color-text);
+}
+
+#contact .form button {
+    border: none;
+    font-size: 1.6rem;
+    color: var(--paragraphy);
+    background: var(--color-text);
+    padding: 1.5rem;
+    border: none;
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow:  11px 11px 22px #00000010,
+               -11px -11px 22px #00000014;
+    font-weight: 600;
+    
+    transition: all 200ms ease-in-out;
+}
+
+#contact .form button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+@media (min-width: 1080px) {
+   
+    section#contact .content {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 10rem;
+    }
+
+    section#contact header {
+        margin-bottom: initial;
+    }
+
+    section#contact header h2 {
+        font-size: 4.5rem;
+        margin-bottom: 2rem;
+    }
+
+    section#contact header p {
+        font-size: 2rem;
+    }
+}
