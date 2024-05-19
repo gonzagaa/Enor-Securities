@@ -97,13 +97,13 @@
       z-index: 8;
       justify-content: center;
       position: relative;
-      height: 90vh;
+      height: 70vh;
     }
 
     header#home .content {
-      height: 90vh;
+      height: 70vh;
       display: grid;
-      grid-template-columns: .9fr 1fr;
+      grid-template-columns: 1fr 1fr;
       align-items: center;
       justify-content: center;
     }
@@ -120,16 +120,16 @@
     }
 
     header#home .content .text h1 {
-      font-size: 4.5rem;
-      margin-bottom: 2rem;
+      font-size: 4rem;
+      margin-bottom: 1rem;
     }
 
     header#home .content .text p {
-      font-size: 4rem;
+      font-size: 3rem;
     }
 
     header#home .image {
-      height: 90vh;
+      height: 70vh;
       display: flex;
       align-items: end;
       width: 100%;

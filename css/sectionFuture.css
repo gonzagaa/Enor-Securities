@@ -38,6 +38,14 @@
     color: var(--color-text);
     font-size: 3rem;
     border: none;
+    font-weight: 600;
+
+    transition: all 200ms ease-in-out;
+}
+
+#future header a button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
 }
 
 #future .cards {
@@ -91,8 +99,9 @@
     }
 
     section#future header a button {
-        padding: 1rem 5rem;
-        font-size: 2.5rem;
+        padding: 1rem 4rem;
+        font-size: 2rem;
+        border-radius: .5rem;
     }
 
     section#future .cards {

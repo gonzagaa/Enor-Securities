@@ -6,13 +6,20 @@
     z-index: 8;
 }
 
+#footer .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #footer img {
     width: 70%;
 }
 
 #footer .image {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     margin-bottom: 5rem;
 }
 

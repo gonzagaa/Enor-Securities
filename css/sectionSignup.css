@@ -11,7 +11,7 @@
 
 #signup header h2 {
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 3.6rem;
     margin-bottom: 1rem;
     color: var(--purple);
@@ -19,7 +19,7 @@
 
 #signup header p {
     color: var(--paragraphy);
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.8rem;
 }
 
@@ -49,7 +49,7 @@
 #signup .cards .card h3 {
     color: var(--purple);
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #signup .cards .card p {
@@ -62,10 +62,6 @@
    
 
     section#signup .content {
-        text-align: center;
-    }
-
-    section#signup header {
         text-align: center;
     }
 
@@ -94,6 +90,10 @@
         position: relative;
     }
 
+    section#signup .cards .card:nth-child(1)::before {
+        display: none;
+    }
+
     section#signup .cards .card::before {
         content: '';
         position: absolute;
@@ -110,7 +110,7 @@
     }
 
     section#signup .cards .card h3 {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     section#signup .cards .card p {
