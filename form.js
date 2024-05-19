@@ -314,7 +314,7 @@ window._load_script = function(url, callback, isSubmit) {
             } else if (value === undefined || value === null || value === '') {
                 elem.className = elem.className + ' _has_error';
                 no_error = false;
-                tooltip = create_tooltip(elem, "Este campo é necessário.");
+                tooltip = create_tooltip(elem, "");
             }
         }
         if (no_error && (elem.id == 'field[]' || elem.id == 'ca[11][v]')) {

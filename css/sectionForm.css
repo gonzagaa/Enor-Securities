@@ -83,12 +83,65 @@
     display: block;
 }
 
+#form .caixaFormulario button.Proximo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    font-weight: 400;
+}
+
 #form .caixaFormulario h3 {
     color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+#form .caixaFormulario p {
+    color: var(--color-text);
+    font-size: 1.4rem;
+    font-weight: 600;
     margin-bottom: 1rem;
     text-align: left;
+}
+
+#form .caixaFormulario .step {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 2rem;
+}
+
+#form .caixaFormulario .step .ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--paragraphy);
+}
+
+#form .caixaFormulario .step h4 {
+    font-size: 1.4rem;
+    color: var(--paragraphy);
+    font-weight: 600;
+    margin-left: 2rem;
+}
+
+#form .caixaFormularioUm .step .ball:nth-child(1) {
+    background-color: var(--paragraphy);
+}
+
+#form .caixaFormularioDois .step .ball:nth-child(2) {
+    background-color: var(--paragraphy);
+}
+
+#form .caixaFormularioTres .step .ball:nth-child(3) {
+    background-color: var(--paragraphy);
+}
+
+#form .caixaFormularioQuatro .step .ball:nth-child(4) {
+    background-color: var(--paragraphy);
 }
 
 #form .form form {
@@ -101,7 +154,6 @@
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.401);
     padding: 1.5rem;
-    border-radius: .5rem;
     border: 1px solid #ffffff84;
     width: 100%;
 
@@ -151,11 +203,11 @@
     background: var(--color-text);
     padding: 1.5rem;
     border: none;
-    border-radius: .5rem;
     width: 100%;
     margin-top: 1rem;
     box-shadow:  11px 11px 22px #00000010,
                -11px -11px 22px #00000014;
+    font-weight: 600;
     
     transition: all 200ms ease-in-out;
 }
