@@ -1,4 +1,4 @@
-window.cfields = {"3":"category_3","4":"funding_stage","5":"amount_to_raise","6":"amount_raised_on_previous_stages","8":"geography","9":"_of_community_members","10":"social_media_links","11":"pitch_deck","12":"estimated_tge","13":"vesting_information"};
+window.cfields = {"14":"companys","15":"website_url","16":"industry","17":"location","18":"funding_stage_","19":"amount_to_raise_","20":"amount_raise_on_previous_stages","21":"estimated_tge_date","22":"vesting_information_","23":"xs_account_link","24":"linkedin_account_link","25":"instagrams_account_link","26":"telegrams_account_link"};
 window._show_thank_you = function(id, message, trackcmp_url, email) {
     var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
     form.querySelector('._form-content').style.display = 'none';
@@ -59,7 +59,7 @@ window._show_error = function(id, message, html) {
 };
 window._load_script = function(url, callback, isSubmit) {
     var head = document.querySelector('head'), script = document.createElement('script'), r = false;
-    var submitButton = document.querySelector('#_form_1_submit');
+    var submitButton = document.querySelector('#_form_5_submit');
     script.charset = 'utf-8';
     script.src = url;
     if (callback) {
@@ -73,9 +73,9 @@ window._load_script = function(url, callback, isSubmit) {
     script.onerror = function() {
         if (isSubmit) {
             if (script.src.length > 10000) {
-                _show_error("1", "Desculpe, seu envio falhou. Deixe suas respostas mais curtas e tente novamente.");
+                _show_error("5", "Desculpe, seu envio falhou. Deixe suas respostas mais curtas e tente novamente.");
             } else {
-                _show_error("1", "Desculpe, seu envio falhou. Tente novamente.");
+                _show_error("5", "Desculpe, seu envio falhou. Tente novamente.");
             }
             submitButton.disabled = false;
             submitButton.classList.remove('processing');
@@ -109,7 +109,7 @@ window._load_script = function(url, callback, isSubmit) {
         }
     }
     var _removed = false;
-        var form_to_submit = document.getElementById('_form_1_');
+        var form_to_submit = document.getElementById('_form_5_');
     var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
 
     var getUrlParam = function(name) {
@@ -480,11 +480,11 @@ window._load_script = function(url, callback, isSubmit) {
         e.preventDefault();
         if (validate_form()) {
             // use this trick to get the submit button & disable it using plain javascript
-            var submitButton = e.target.querySelector('#_form_1_submit');
+            var submitButton = e.target.querySelector('#_form_5_submit');
             submitButton.disabled = true;
             submitButton.classList.add('processing');
                         var serialized = _form_serialize(
-                document.getElementById('_form_1_')
+                document.getElementById('_form_5_')
             ).replace(/%0A/g, '\\n');
             var err = form_to_submit.querySelector('._form_error');
             err ? err.parentNode.removeChild(err) : false;

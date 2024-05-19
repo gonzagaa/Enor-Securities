@@ -24,6 +24,10 @@
   --nav-height: 7.2rem;
 }
 
+form {
+  position: relative;
+  z-index: 10;
+}
 
 #particles-js {
   background-color: transparent;
