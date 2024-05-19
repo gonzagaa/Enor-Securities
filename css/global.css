@@ -24,9 +24,27 @@
   --nav-height: 7.2rem;
 }
 
-form {
-  position: relative;
+#fixedButton {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--color-text);
+  color: var(--purple);
+  font-size: 2rem;
   z-index: 10;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1rem;
+  width: 100%;
+
+  box-shadow: 4px 4px 20px #00000039;
+
+  transition: all 200ms ease-in-out;
+}
+
+#fixedButton:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
 }
 
 #particles-js {
@@ -109,6 +127,12 @@ html {
   @media (min-width: 1080px) {
     .wrapper {
       width: min(100rem, 100%);
+    }
+
+    #fixedButton {
+      top: 2%;
+      right: 2%;
+      width: 10%;
     }
   }
 

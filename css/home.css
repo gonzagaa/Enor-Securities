@@ -33,6 +33,9 @@
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, transparent 100%);
 }
 
+#home .content {
+  margin-top: 8rem;
+}
 
 #home .text {
   margin-top: 4rem;
@@ -86,12 +89,7 @@
   transform: translate(-50%);
 }
 
-@media (min-width: 768px) {
- 
-}
-
 @media (min-width: 1080px) {
-
     header#home {
       background: var(--gradient);
       z-index: 8;
@@ -101,6 +99,7 @@
     }
 
     header#home .content {
+      margin-top: initial;
       height: 70vh;
       display: grid;
       grid-template-columns: 1fr 1fr;
