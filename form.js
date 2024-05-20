@@ -267,7 +267,7 @@ window._load_script = function(url, callback, isSubmit) {
                     }
                 }
                 if (!no_error) {
-                    tooltip = create_tooltip(elem, "Por favor, selecione uma opção.");
+                    tooltip = create_tooltip(elem, "");
                 }
             } else if (elem.type =='checkbox') {
                 var elems = form_to_submit.elements[elem.name], found = false, err = [];
@@ -309,7 +309,7 @@ window._load_script = function(url, callback, isSubmit) {
                 if (!selected) {
                     elem.className = elem.className + ' _has_error';
                     no_error = false;
-                    tooltip = create_tooltip(elem, "Por favor, selecione uma opção.");
+                    tooltip = create_tooltip(elem, "");
                 }
             } else if (value === undefined || value === null || value === '') {
                 elem.className = elem.className + ' _has_error';
