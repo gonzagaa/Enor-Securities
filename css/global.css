@@ -33,7 +33,7 @@
   font-size: 2rem;
   z-index: 20;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   padding: 1rem;
   width: 100%;
 
@@ -75,28 +75,7 @@ html {
     background: var(--purple);
   }
 
-  .cursor-dot {
-    width: 5px;
-    height: 5px;
-    background: var(--purple);
-  }
-
-  .cursor-outline {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #8cd7ff7a;
-  }
-
-  .cursor-dot,
-  .cursor-outline {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 150;
-    pointer-events: none;
-  }
+ 
 
   section {
     padding-block: 8rem;
@@ -133,6 +112,29 @@ html {
       top: 2%;
       right: 2%;
       width: 10%;
+    }
+
+    .cursor-dot {
+      width: 5px;
+      height: 5px;
+      background: var(--purple);
+    }
+  
+    .cursor-outline {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #8cd7ff7a;
+    }
+  
+    .cursor-dot,
+    .cursor-outline {
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      z-index: 150;
+      pointer-events: none;
     }
   }
 

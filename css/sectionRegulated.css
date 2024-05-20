@@ -71,6 +71,7 @@
 
     section#regulated header h2 {
         font-size: 10rem;
+        line-height: 1;
     }
 
     section#regulated header .logos {

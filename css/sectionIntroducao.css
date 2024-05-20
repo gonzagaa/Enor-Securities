@@ -2,7 +2,6 @@
     background: var(--color-text);
     position: relative;
     z-index: 6;
-    overflow: hidden;
 }
 
 #introducao header {
@@ -42,7 +41,7 @@
 #introducao header p {
     font-size: 1.8rem;
     color: var(--paragraphy);
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5;
 }
 

@@ -29,7 +29,7 @@
     margin-top: 1rem;
     font-size: 1.6rem;
     color: var(--paragraphy);
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.5;
 }
 
@@ -71,7 +71,7 @@
 
 #resumo .cards .card p {
     color: var(--paragraphy);
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.6rem;
 }
 

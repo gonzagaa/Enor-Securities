@@ -24,6 +24,11 @@
     font-size: 1.8rem;
 }
 
+#contact .form {
+    position: relative;
+    z-index: 10;
+}
+
 #contact .form form {
     width: 100%;
 }
@@ -33,7 +38,6 @@
     border: none;
     background-color: rgba(229, 229, 229, 0.28);
     padding: 1.5rem;
-    border: 1px solid #ffffffca;
     width: 100%;
 
     box-shadow:  11px 11px 22px #00000010,
@@ -62,7 +66,7 @@
 #contact .form button {
     border: none;
     font-size: 1.6rem;
-    color: var(--paragraphy);
+    color: var(--purple);
     background: var(--color-text);
     padding: 1.5rem;
     border: none;

@@ -84,7 +84,7 @@
 #introducao img.botaoMobile {
   width: 12rem;
   position: absolute;
-  top: -7%;
+  top: -4%;
   left: 50%;
   transform: translate(-50%);
 }

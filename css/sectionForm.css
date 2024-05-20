@@ -83,12 +83,24 @@
     display: block;
 }
 
-#form .caixaFormulario button.Proximo {
+#form .caixaFormulario .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#form .caixaFormularioUm .buttons {
+    display: inherit;
+    grid-template-columns: 1fr;
+}
+
+#form .caixaFormulario button.Proximo,
+#form .caixaFormulario button.Voltar {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 #form .caixaFormulario h3 {
@@ -154,7 +166,6 @@
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.401);
     padding: 1.5rem;
-    border: 1px solid #ffffff84;
     width: 100%;
 
     box-shadow:  11px 11px 22px #00000010,
@@ -170,7 +181,6 @@
     background-color: rgba(255, 255, 255, 0.401);
     padding: 1.5rem;
     border-radius: 1rem;
-    border: 1px solid #ffffff84;
     width: 100%;
 
     box-shadow:  11px 11px 22px #00000010,
@@ -199,7 +209,7 @@
 #form .form button {
     border: none;
     font-size: 1.6rem;
-    color: var(--paragraphy);
+    color: var(--purple);
     background: var(--color-text);
     padding: 1.5rem;
     border: none;
@@ -223,7 +233,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 10rem;
-        row-gap: 8rem;
+        row-gap: 4rem;
         align-items: start;
     }
 

@@ -36,4 +36,23 @@ window.addEventListener('mousemove', function (e) {
             }
         });
     });
+
+    document.querySelectorAll('.Voltar').forEach(button => {
+      button.addEventListener('click', () => {
+          sections[currentSectionIndex].classList.remove('active');
+          currentSectionIndex--;
+          if (currentSectionIndex >= 0) {
+              sections[currentSectionIndex].classList.add('active');
+          }
+      });
+  });
 });
+
+
+
+var details = [...document.querySelectorAll('details')];
+document.addEventListener('click', function(e){
+  if(details.some(f => f.contains(e.target)).length != 0){
+    details.forEach(f => f.removeAttribute('open'));
+  }
+})
